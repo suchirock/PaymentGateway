@@ -1,0 +1,44 @@
+/* LeftBar */
+.leftBar-item {
+    position: relative;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.leftBar-item::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    right: 20%;
+    border: solid var(--dark);
+    border-width: 0 0.3rem 0.3rem 0;
+    display: inline-block;
+    padding: 0.3rem;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.leftBar-hr {
+    width: 90%;
+}
+
+.leftBar-list {
+    list-style-type: none;
+    padding: 2rem 0;
+}
+.leftBar-link {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--grey);
+}
+/* main */
+
+.main-content__item {
+    color: var(--dark);
+    position: relative;
+    cursor: pointer;
+}
+.main-content__item:hover .addToCart,
+.main-content__item:hover .addToFav {
+    display: block;
+}
